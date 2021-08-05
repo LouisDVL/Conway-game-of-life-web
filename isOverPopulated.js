@@ -1,5 +1,8 @@
-function isOverPopulated (neighbourCount) {
-
+function isOverPopulated(neighbourCount) {
+  if (neighbourCount > 3) {
+    return true;
+  }
+  return false;
 }
 
-module.exports = isOverPopulated
+module.exports = isOverPopulated;

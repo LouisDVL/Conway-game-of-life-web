@@ -1,6 +1,8 @@
-function displayBoard (board) {
+function displayBoard(board) {
   // eslint-disable-next-line no-console
-  console.log(board)
+  board.forEach((row) => {
+    console.log(row);
+  });
 }
 
-module.exports = displayBoard
+module.exports = displayBoard;

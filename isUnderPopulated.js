@@ -1,5 +1,8 @@
-function isUnderPopulated (neighbourCount) {
-
+function isUnderPopulated(neighbourCount) {
+  if (neighbourCount < 2) {
+    return true;
+  }
+  return false;
 }
 
-module.exports = isUnderPopulated
+module.exports = isUnderPopulated;
