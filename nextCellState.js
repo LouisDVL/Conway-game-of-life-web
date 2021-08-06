@@ -9,6 +9,8 @@ function nextCellState(cellState, neighbourCount) {
     return false;
   } else if (isRessurectable) {
     return true;
+  } else if (neighbourCount === 2) {
+    return cellState;
   }
 }
 

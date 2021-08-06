@@ -3,11 +3,21 @@ const nextBoard = require("./nextBoard");
 const displayBoard = require("./displayBoard");
 
 const size = 5;
-const refreshInteral = 100;
+const refreshInteral = 1000;
 
-let board = createBoard(size);
+// let board = createBoard(size);
 
-setTimeout(() => {
+let board = [
+  [false, false, false, false, false],
+  [false, false, false, false, false],
+  [false, false, false, true, false],
+  [false, true, false, true, false],
+  [false, false, true, true, false],
+];
+
+setInterval(() => {
+  console.log("++++++++++++++++++++++++++++++++++");
   displayBoard(board);
-  // board = nextBoard(board);
+  console.log("++++++++++++++++++++++++++++++++++");
+  board = nextBoard(board);
 }, refreshInteral);

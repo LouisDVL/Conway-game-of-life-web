@@ -8,7 +8,7 @@ function getNeighbours(cellRow, cellColumn, board) {
   const down = [cellRow + 1, cellColumn];
   const downLeft = [cellRow + 1, cellColumn - 1];
   const left = [cellRow, cellColumn - 1];
-  const upLeft = [cellRow - 1, cellRow - 1];
+  const upLeft = [cellRow - 1, cellColumn - 1];
 
   let coords = [up, upRight, right, downRight, down, downLeft, left, upLeft];
 
